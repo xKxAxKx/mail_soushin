@@ -18,11 +18,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
   if ($mail == '')
   {
-    $errors['mail'] = 'メールアドレス';
+    $errors['mail'] = 'メールアドレスが未入力です！';
   }
 
   if (!is_mail($mail)){
-    $errors['mail'] = 'メールアドレスが正しくありません';
+    $errors['mail'] = 'メールアドレスが正しくありません！';
   }
 
   if ($title == '')
