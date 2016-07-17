@@ -37,9 +37,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
   //バリデーション突破後
   if(empty($errors)){
     mb_language("japanese");
-    mb_internal_encoding("EUC-JP");
+    mb_internal_encoding("UTF-8");
 
-    $to = "example@example.com";
+    $to = "pekepooooong@gmail.com";
     $subject = $title;
     $body = $honbun;
     $from = $mail;
